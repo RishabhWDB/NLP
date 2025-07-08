@@ -20,7 +20,7 @@ sequences = tokenizer.texts_to_sequences(sentences)
 
 #test_seq = tokenizer.texts_to_sequences(test_data)
 #print(test_seq)
-padded = pad_sequences(sequences, padding = 'post')
+padded = pad_sequences(sequences, padding = 'post', maxlen  = 5)
 print(word_index)
 print(sequences)
 print(padded)
